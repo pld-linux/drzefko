@@ -1,7 +1,7 @@
 Summary:	A fraktal tree
 Summary(pl):	Drzewko fraktalne
 Name:		drzefko
-Version:	0.4.1
+Version:	0.5.0
 Release:	1
 License:	GPL
 Group:		X11/Amusements
@@ -30,14 +30,15 @@ jest zalecany (ale nie wymagany -- program by³ pisany pod Voodoo.)
 %build
 %{__make} \
 	CC=%{__cc} \
-	CFLAGS="%{rpmcflags} `sdl-config --cflags`" \
-	LDFLAGS="%{rpmldflags} `sdl-config --libs` -lGL -lGLU"
+	CFLAGS="%{rpmcflags} `sdl-config --cflags` -I/usr/X11R6/include -DDATADIR=\\\"%{_datadir}/drzefko/\\\" -DVERSION=\\\"%{version}\\\"" \
+	LDFLAGS="%{rpmldflags} `sdl-config --libs` -lGL -lGLU -lSDL_image"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/Amusements}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/Amusements,%{_datadir}/drzefko}
 
 install drzefko $RPM_BUILD_ROOT%{_bindir}
+install lisc.png $RPM_BUILD_ROOT%{_datadir}/drzefko/
 
 install drzefko.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Amusements
@@ -49,5 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %lang(pl) %doc README
 %attr(755,root,root) %{_bindir}/*
+%{_datadir}/drzefko
 %{_pixmapsdir}/*
 %{_applnkdir}/Amusements/*
