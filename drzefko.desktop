@@ -1,3 +1,4 @@
+[Desktop Entry]
 Name=drzefko
 Comment=A fractal tree
 Comment[pl]=Drzewko fraktalne
@@ -5,3 +6,4 @@ Icon=drzefko.png
 Exec=drzefko
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
