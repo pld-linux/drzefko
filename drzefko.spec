@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Amusements
 Source0:	%{name}-%{version}.tar.gz
+Source1:	%{name}.desktop
 BuildRequires:	SDL-devel
 BuildRequires:	OpenGL-devel
 Requires:	OpenGL
@@ -33,30 +34,19 @@ jest zalecany (ale nie wymagany -- program by³ pisany pod Voodoo.)
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/Amusements}
+
 install drzefko $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf README
-
 install drzefko.png $RPM_BUILD_ROOT%{_pixmapsdir}
-cat <<EOF > $RPM_BUILD_ROOT%{_applnkdir}/Amusements/drzefko.desktop
-[Desktop Entry]
-Name=drzefko
-Comment=A fractal tree
-Comment[pl]=Drzewko fraktalne
-Icon=drzefko.png
-Exec=drzefko
-Terminal=0
-Type=Application
-EOF
+install %SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Amusements
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%lang(pl) %doc README
 %attr(755,root,root) %{_bindir}/*
-%lang(pl) %doc README.gz
 %{_pixmapsdir}/*
 %{_applnkdir}/Amusements/*
