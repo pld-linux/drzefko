@@ -5,10 +5,10 @@ Version:	0.5.0
 Release:	1
 License:	GPL
 Group:		X11/Amusements
-Source0:	http://team.pld.org.pl/~wolf/drzefko/s/%{name}-%{version}.tar.gz
-# Source0-md5:	63ce5abff0da967283f061622d781017
+Source0:	http://chimera.one.pl/~wolf/drzefko/s/%{name}-%{version}.tar.gz
+# Source0-md5:	0d51a896a2f91c26a7dd8114953931bc
 Source1:	%{name}.desktop
-URL:		http://team.pld.org.pl/~wolf/drzefko/
+URL:		http://chimera.one.pl/~wolf/drzefko/
 BuildRequires:	SDL-devel
 BuildRequires:	OpenGL-devel
 Requires:	OpenGL
