@@ -7,4 +7,5 @@ Icon=drzefko.png
 Exec=drzefko
 Terminal=false
 Type=Application
+Categories=Amusement;
 # vi: encoding=utf-8
