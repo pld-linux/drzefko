@@ -5,8 +5,9 @@ Version:	0.4.1
 Release:	1
 License:	GPL
 Group:		X11/Amusements
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://team.pld.org.pl/~wolf/drzefko/s/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+URL:		http://team.pld.org.pl/~wolf/drzefko/
 BuildRequires:	SDL-devel
 BuildRequires:	OpenGL-devel
 Requires:	OpenGL
