@@ -1,7 +1,7 @@
 Summary:	A fraktal tree
 Summary(pl):	Drzewko fraktalne
 Name:		drzefko
-Version:	0.4.0
+Version:	0.4.1
 Release:	1
 License:	GPL
 Group:		X11/Amusements
