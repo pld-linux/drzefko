@@ -39,7 +39,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/Amusements}
 install drzefko $RPM_BUILD_ROOT%{_bindir}
 
 install drzefko.png $RPM_BUILD_ROOT%{_pixmapsdir}
-install %SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Amusements
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Amusements
 
 %clean
 rm -rf $RPM_BUILD_ROOT
