@@ -42,13 +42,13 @@ jest zalecany (ale nie wymagany -- program by³ pisany pod Voodoo).
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_applnkdir}/Amusements,%{_datadir}/drzefko}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_pixmapsdir},%{_desktopdir},%{_datadir}/drzefko}
 
 install drzefko $RPM_BUILD_ROOT%{_bindir}
 install lisc.png $RPM_BUILD_ROOT%{_datadir}/drzefko/
 
 install drzefko.png $RPM_BUILD_ROOT%{_pixmapsdir}
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Amusements
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/drzefko
 %{_pixmapsdir}/*
-%{_applnkdir}/Amusements/*
+%{_desktopdir}/*
