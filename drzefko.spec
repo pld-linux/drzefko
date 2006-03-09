@@ -36,7 +36,7 @@ jest zalecany (ale nie wymagany -- program by³ pisany pod Voodoo).
 
 %build
 %{__make} \
-	CC=%{__cc} \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} `sdl-config --cflags` -I/usr/X11R6/include -DDATADIR=\\\"%{_datadir}/drzefko/\\\" -DVERSION=\\\"%{version}\\\"" \
 	LDFLAGS="%{rpmldflags} `sdl-config --libs` -L/usr/X11R6/lib -lGL -lGLU -lSDL_image"
 
