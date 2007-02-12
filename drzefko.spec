@@ -1,6 +1,6 @@
 Summary:	A fraktal tree
-Summary(es):	Un ·rbol fractal
-Summary(pl):	Drzewko fraktalne
+Summary(es.UTF-8):   Un √°rbol fractal
+Summary(pl.UTF-8):   Drzewko fraktalne
 Name:		drzefko
 Version:	0.5.0
 Release:	3
@@ -22,14 +22,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Toy showing use of fractals. Warning: GeForce class 3D accelerator is
 recommended (but not required -- it was developed on Voodoo.)
 
-%description -l es
+%description -l es.UTF-8
 Un juguete que muestra el uso de fractales. Aviso: se recomienda un
 accelerador 3D de la clase de GeForce (sin embargo no se exige -- el
 programa ha sido desarrollado bajo Voodoo).
 
-%description -l pl
-Zabawka pokazuj±ca uøycie fraktali. Uwaga: akcelerator klasy GeForce
-jest zalecany (ale nie wymagany -- program by≥ pisany pod Voodoo).
+%description -l pl.UTF-8
+Zabawka pokazujƒÖca u≈ºycie fraktali. Uwaga: akcelerator klasy GeForce
+jest zalecany (ale nie wymagany -- program by≈Ç pisany pod Voodoo).
 
 %prep
 %setup -q
