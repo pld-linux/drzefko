@@ -1,6 +1,6 @@
 Summary:	A fraktal tree
-Summary(es.UTF-8):   Un árbol fractal
-Summary(pl.UTF-8):   Drzewko fraktalne
+Summary(es.UTF-8):	Un árbol fractal
+Summary(pl.UTF-8):	Drzewko fraktalne
 Name:		drzefko
 Version:	0.5.0
 Release:	3
