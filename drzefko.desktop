@@ -1,9 +1,8 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=drzefko
 Comment=A fractal tree
 Comment[pl]=Drzewko fraktalne
-Icon=drzefko.png
+Icon=drzefko
 Exec=drzefko
 Terminal=false
 Type=Application
