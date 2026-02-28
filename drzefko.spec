@@ -3,7 +3,7 @@ Summary(es.UTF-8):	Un árbol fractal
 Summary(pl.UTF-8):	Drzewko fraktalne
 Name:		drzefko
 Version:	0.5.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Amusements
 Source0:	http://chimera.one.pl/~wolf/drzefko/s/%{name}-%{version}.tar.gz
